@@ -1,0 +1,23 @@
+﻿<Window x:Class="InventorySystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventorySystem"
+        xmlns:login="clr-namespace:InventorySystem.login.loginView"
+        mc:Ignorable="d"
+        Title="MainWindow" MaxHeight="400" MaxWidth="500">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33"/>
+            <RowDefinition Height="300"/>
+
+        </Grid.RowDefinitions>
+        <!-- Inventory  System -->
+        <TextBlock Text="Inventory  System" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Foreground="Orange"/>
+         
+        <!--Login System-->
+        <login:LoginInputs Grid.Row="1" HorizontalAlignment="Center" Height="300" Margin="5" VerticalAlignment="Center" />
+
+    </Grid>
+</Window>

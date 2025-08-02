@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="InventorySystem.AddProductAndViewStatsBtn.UserControls_1.AddAndStatsButtons"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InventorySystem.AddProductAndViewStatsBtn.UserControls_1"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="350">
+    <UserControl >
+        <UniformGrid Rows="1" Columns="3">
+            <Button x:Name="add_product" Content="Add Product" Height="35" Width="100" Background="Green" Click="add_product_Click"/>
+            <Button x:Name="view_products_for_edit_delete" Content="View Products" Height="35" Width="100"  Background="Blue" Click="view_products_for_edit_delete_Click"  />
+            <Button x:Name="view_earnings" Content="View Total Earnings" Height="35" Width="107"  Background="LightGoldenrodYellow" Click="view_earnings_Click"  />
+        </UniformGrid>
+    </UserControl>
+
+</UserControl>

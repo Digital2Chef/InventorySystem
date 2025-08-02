@@ -1,0 +1,28 @@
+﻿<Window x:Class="InventorySystem.InventoryDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventorySystem"
+        xmlns:buttons="clr-namespace:InventorySystem.AddProductAndViewStatsBtn.UserControls_1"
+        mc:Ignorable="d"
+        Title="InventoryDashboard" MaxHeight="450" MaxWidth="800">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <!--Inventory management dashboard-->
+        <TextBlock Text="Inventory Management System" FontSize="20" Grid.Row="0" Foreground="Orange" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        
+        <!--Add product and view stats user control-->
+        <buttons:AddAndStatsButtons Grid.Row="1"  Width="350" />
+
+        <!--Exit btn-->
+        <Button x:Name="exit" Grid.Row="4" Width="120" Height="35" Content="Logout" Background="Red" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="exit_Click"/>
+    </Grid>
+</Window>
